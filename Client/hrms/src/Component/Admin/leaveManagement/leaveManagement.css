@@ -1,0 +1,99 @@
+.admin-request-management-main-container {
+    background-color: #f7f7e6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    height: 93%;
+    width: 96.8vw;
+}
+
+
+
+.list-of-requests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Increased gap for better spacing */
+    margin-top: 20px; /* Add some spacing from the header */
+    overflow-y: scroll;
+    height: 68vh;
+    width: 80vw;
+    scrollbar-width: none;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 200px; /* Slightly wider for better data readability */
+    margin: 10px;
+    padding: 20px; /* Increased padding for a cleaner layout */
+    border-radius: 12px; /* Softer border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for a modern look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details-container:hover {
+    transform: translateY(-8px); /* More pronounced lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.leave-info {
+    font-size: 12px;
+    margin-bottom: 10px; /* More space between items */
+    color: #444; /* Slightly darker color for better contrast */
+    display: flex;
+    justify-content: space-between; /* Align label and value */
+    align-items: center; /* Center vertically */
+}
+
+.leave-subhead {
+    font-size: 12px;
+    font-style: italic;
+    color: #555;
+    margin-right: 10px; /* Spacing between label and content */
+    flex-shrink: 0; /* Prevent label from shrinking */
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-around; /* Spread buttons evenly */
+    margin-top: 15px;
+}
+
+.manage-button {
+    padding: 10px 20px; /* Increased padding for a more clickable area */
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold; /* Bold text for better emphasis */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.manage-button:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.approve {
+    background-color: #28a745; /* Updated to a more vibrant green */
+}
+
+.approve:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.reject {
+    background-color: #dc3545; /* Updated to a more vibrant red */
+}
+
+.reject:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.leave-management-content{
+    display: flex;
+    
+}

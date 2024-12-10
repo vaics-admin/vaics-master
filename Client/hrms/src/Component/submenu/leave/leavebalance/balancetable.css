@@ -1,0 +1,46 @@
+.leave-content-container{
+    background-color: white;
+    width: 80%;
+    margin: 30px;
+}
+
+.leave-balance-table {
+    background-color: transparent;
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  .leave-balance-table th,
+  .leave-balance-table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .leave-balance-table th {
+    background-color: #dce496;
+    color: black;
+    font-weight: bold;
+    height: 50px;
+  }
+  
+  .leave-balance-table tr:nth-child(even) {
+    background-color: #faf8f5;
+  }
+  
+  .leave-balance-table tr:hover {
+    background-color: #ff910088;
+  }
+  
+  .leave-balance-table td {
+    color: #666;
+  }
+
+.leave-button{
+    background-color: #438cb9ab;
+    border: 0px;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+}

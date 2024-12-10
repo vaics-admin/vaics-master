@@ -1,0 +1,39 @@
+.list_of_count{
+    background-color: white;
+    list-style: none;
+    align-items: flex-start;
+    padding: 0px;
+    width: 200px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.request-list-item{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bolder;
+    margin: 10px;
+}
+.leaveCount-container{
+    height: 50vh;
+}
+
+.request-filter-button{
+    height: 30px;
+    background-color: #b8a6d0;
+    border-width: 0px;
+    border-radius: 10px;
+    width: 180px;
+    font-weight: bold;
+    
+}
+
+.filter-reset-button{
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: rgb(172, 172, 207);
+    border: 0 none;
+    border-radius: 10px;
+}
