@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .payslip-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .payslip-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .payslip-title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .payslip-subtitle {
+    font-size: 14px;
+  }
+  
+  .payslip-branch-info {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .payslip-employee-details {
+    margin-bottom: 20px;
+    width: 400px;
+  }
+  
+  .payslip-detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .payslip-label {
+    font-weight: bold;
+  }
+  
+  .payslip-table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+  
+  .payslip-table th,
+  .payslip-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .payslip-table td:hover {
+    background-color: #e3dd81;
+  }
+  
+
+  .payslip-table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .payslip-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .payslip-net-pay {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    color: red;
+  }
+  
+  .payslip-amount-in-words span {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    width: 500px;
+    color: rgb(255, 0, 8);
+  }
+  
+  .payslip-signature {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .payslip-signatory {
+    margin-top: 40px;
+    font-style: italic;
+  }
+  

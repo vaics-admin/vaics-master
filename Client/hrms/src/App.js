@@ -24,7 +24,7 @@ import Unplanedleave from './Component/submenu/leave/unplannedleave/unpleave';
 import Encashment from './Component/submenu/leave/leavehistory/history';
 
 // Payroll Component Import 
-import Viewpayslip from './Component/submenu/payroll/viewpayslip/viewpayslip';
+import Payslip from './Component/submenu/payroll/viewpayslip/viewpayslip';
 import ITdeclaration from './Component/submenu/payroll/itdeclaration/itdeclaration';
 
 //PMS Employee Component Import 
@@ -34,6 +34,17 @@ import Appraisal from './Component/submenu/pmsEmployee/myappraisal/appraisal';
 
 import './App.css';
 import RequestManagement from './Component/Admin/leaveManagement/leaveManagement';
+
+import PdfTextExtractor from './Component/experiment/pdfextraction/pdf';
+import PDFParserReact from './Component/experiment/pdfextraction/pdf';
+import EditEmployee from './Component/Admin/editEmployee/editemployee';
+import FileUpload from './Component/experiment/insret_using_excel';
+import DownloadLeaveHistory from './Component/experiment/download/download';
+import AdminDashbord from './Component/Admin/adminDashbord/adminDashbord';
+import MLdrop from './Component/experiment/dropDown/mldrop';
+import MyNavbar from './Component/experiment/dropDown/mldrop';
+import EmployeeSearch from './Component/experiment/search suggestions/searchSuggestions';
+import Calendar from './Component/experiment/gitCalander/gitcalander';
 
 function App() {
   return (
@@ -56,7 +67,7 @@ function App() {
           
 
           {/* Payroll Route */}
-          <Route path='/View-Payslip' Component={Viewpayslip}/>
+          <Route path='/Payroll/View-Payslip' Component={Payslip}/>
           <Route path='/IT-Declaration' Component={ITdeclaration}/>
 
           {/* PMS Employee Routes*/}
@@ -65,6 +76,21 @@ function App() {
 
           <Route path='/admin/get-requests' Component={RequestManagement}/>
 
+          <Route path='/experiment/pdf' Component={ PDFParserReact}/>
+
+          <Route path='/admin/editEmployee' Component={EditEmployee}/>
+
+          <Route path='/experiment/uplodeExcel' Component={FileUpload}/>
+
+          <Route path='/experiment/down' Component={DownloadLeaveHistory}/>
+
+          <Route path='/Admin-dashbord' Component={AdminDashbord}/>
+
+          <Route path='/experiment/mynavbar' Component={MyNavbar}/>
+
+          <Route path='/experiment/search' Component={EmployeeSearch}/>
+ 
+          <Route path='/experiment/calander' Component={Calendar}/>
         </Routes>
       </Router>
 

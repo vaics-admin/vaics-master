@@ -6,9 +6,14 @@ import ToBeRegularizedTable from './tobeRegularizeTable';
 
 const Applyswipe = () => {
   const [selectedDate, setSelectedDate] = useState(''); // Shared state for selected date
+  const [selectedId , setSelectedId] = useState('')
 
-  const handleRegularize = (date) => {
-    setSelectedDate(date); // Update the selected date in the state
+  const handleRegularize = (props) => {
+    const date = props[0]
+    const id = props[1]
+    setSelectedDate(date)
+    setSelectedId(id)
+    // Update the selected date in the state
   };
 
   return (
@@ -22,7 +27,7 @@ const Applyswipe = () => {
           
           <div className="div">
             {/* Pass the selectedDate to the form */}
-            <MUIForm selectedDate={selectedDate} />
+            <MUIForm data = {{selectedDate : selectedDate , selectedId : selectedId}}/>
           </div>
 
           <div className="swipe-history-container">

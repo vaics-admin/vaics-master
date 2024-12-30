@@ -19,7 +19,7 @@ const AppliedLeaveCounts = (props) => {
 
     return (
         <div className="leaveCount-container">
-            <h1>Information</h1>
+            <h1 className='leaveCount-head'>Information</h1>
             <ul className="list_of_count">
                 {Object.entries(leaveTypeCounts).map(([type, count], index) => (
                     <li key={index} className="request-list-item">
@@ -28,7 +28,7 @@ const AppliedLeaveCounts = (props) => {
                         </button>
                     </li>
                 ))}
-                <button className='filter-reset-button' onClick={() => setFilterValue("")}> <IoMdRefresh /> Rest </button>
+                <button className='filter-reset-button' onClick={() => setFilterValue("")}> <IoMdRefresh /> Reset </button>
             </ul>
         </div>
     );

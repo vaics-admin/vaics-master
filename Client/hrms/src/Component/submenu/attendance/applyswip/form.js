@@ -14,7 +14,9 @@ import {
   Typography,
 } from '@mui/material';
 
-const MUIForm = ({ selectedDate }) => {
+const MUIForm = (props) => {
+  const {selectedDate , selectedId } = props.data
+  
   const [formData, setFormData] = useState({
     swipeDate: '',
     swipeType: '',
@@ -22,20 +24,35 @@ const MUIForm = ({ selectedDate }) => {
     outTime: '',
     reason: '',
     selectReason: '',
+    att_id: '',
   });
 
   useEffect(() => {
-    setFormData((prevData) => ({ ...prevData, swipeDate: selectedDate })); // Update date field
-  }, [selectedDate]);
+    setFormData((prevData) => ({ ...prevData, swipeDate: selectedDate , att_id : selectedId})); // Update date field
+    
+  }, [selectedDate , selectedId]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const employee_id = localStorage.getItem("employee_id")
     console.log('Form Data Submitted:', formData);
+    try {
+      const response = await fetch("http://192.168.20.6:5000/admin/attendance-request" , {
+        method : "POST" ,
+        headers : {
+          "Content-Type" : "application/json"
+        },
+        body :JSON.stringify({formData , employee_id })
+      })
+    } catch (error) {
+      console.log(error);
+      console.log("by")
+    }
   };
 
   return (

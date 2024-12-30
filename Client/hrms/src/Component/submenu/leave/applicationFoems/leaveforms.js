@@ -111,11 +111,11 @@ export const Leaveforms = () => {
               onChange={handleChange}
             >
               <option value="">Select</option>
-              <option value="sick">Sick Leave</option>
-              <option value="casual">Casual Leave</option>
-              <option value="vacation">Vacation Leave</option>
+              <option value="Restricted Holiday">Restricted Holiday</option>
+              <option value="Loss of Pay">Loss of Pay</option>
+              {/* <option value="vacation">Vacation Leave</option> */}
               <option value="Earned Leave">Earned Leave</option>
-              <option value="other">Other</option>
+              {/* <option value="other">Other</option> */}
             </select>
           </div>
           <div className="form-group">

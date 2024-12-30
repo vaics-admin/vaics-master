@@ -45,7 +45,7 @@ const ToBeRegularizedTable = ({ onRegularize }) => {
                   variant="contained"
                   color="primary"
                   size="small"
-                  onClick={() => onRegularize(row.date)} // Pass the date to the handler
+                  onClick={() => onRegularize([row.date , row.id])} // Pass the date to the handler
                 >
                   Regularize
                 </Button>

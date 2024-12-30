@@ -9,7 +9,7 @@ const RequestManagement = () => {
 
   const getDetails = async () => {
     try {
-      const response = await fetch("http://localhost:5000/getleaverequests"); // Using GET request
+      const response = await fetch("http://192.168.20.6:5000/getleaverequests"); // Using GET request
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -32,7 +32,7 @@ const RequestManagement = () => {
   const approverequest = async (props) => {
     const details = props
     try {
-      const response = await fetch("http://localhost:5000/admin/requestmanagement" , {
+      const response = await fetch("http://192.168.20.6:5000/admin/requestmanagement" , {
         method : 'POST',
         headers : {
           'Content-Type' : 'application/json',
@@ -60,7 +60,7 @@ const RequestManagement = () => {
     <div className="admin-request-management-main-container">
       <Dashboard />
       <div className="request-details">
-        <h2>Leave Requests</h2>
+        <h2 className="admin-request-head">Leave Requests</h2>
         <div className="leave-management-content">
           {/* Pass setFilterValue to AppliedLeaveCounts for filtering */}
           <AppliedLeaveCounts
