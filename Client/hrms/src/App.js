@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import RequestManagement from './Component/Admin/leaveManagement/leaveManagement';
+import PasswordChange from './Component/Admin/adminDashbord/Password/App';
 
 import PdfTextExtractor from './Component/experiment/pdfextraction/pdf';
 import PDFParserReact from './Component/experiment/pdfextraction/pdf';
@@ -108,6 +109,10 @@ function App() {
           <Route path='/experiment/search' Component={EmployeeSearch}/>
  
           <Route path='/experiment/calander' Component={Calendar}/>
+
+
+
+          <Route path='/admin/password' Component={PasswordChange}/>
 
 
   {/* PMS Employee routes */}
