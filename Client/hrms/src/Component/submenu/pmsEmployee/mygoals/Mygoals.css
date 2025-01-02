@@ -1,0 +1,82 @@
+/* AppraisalForm.css */
+
+body {
+    background-color: #f4f4f9; /* Light background color */
+    font-family: Arial, sans-serif; /* Font style */
+  }
+  
+  .appraisal-form-container {
+    width: 500px;
+    margin: 50px auto; /* Center the form */
+    padding: 20px; /* Add padding */
+    background-color: #ffffff; /* White background for the form */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Darker text color */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+    color: #555; /* Darker label color */
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 10px; /* Increased padding */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s; /* Transition effect */
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  textarea {
+    resize: vertical; /* Allow vertical resizing only */
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submit-btn, .reset-btn {
+    padding: 10px 15px;
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+  }
+  
+  .submit-btn {
+    background-color: #28a745; /* Green background for submit */
+    color: white; /* White text */
+  }
+  
+  .reset-btn {
+    background-color: #dc3545; /* Red background for reset */
+    color: white; /* White text */
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .reset-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  

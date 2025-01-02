@@ -2,6 +2,23 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 
+import './App.css';
+import RequestManagement from './Component/Admin/leaveManagement/leaveManagement';
+
+import PdfTextExtractor from './Component/experiment/pdfextraction/pdf';
+import PDFParserReact from './Component/experiment/pdfextraction/pdf';
+import EditEmployee from './Component/Admin/editEmployee/editemployee';
+import FileUpload from './Component/experiment/insret_using_excel';
+import DownloadLeaveHistory from './Component/experiment/download/download';
+import AdminDashbord from './Component/Admin/adminDashbord/adminDashbord';
+import MLdrop from './Component/experiment/dropDown/mldrop';
+import MyNavbar from './Component/experiment/dropDown/mldrop';
+import EmployeeSearch from './Component/experiment/search suggestions/searchSuggestions';
+import Calendar from './Component/experiment/gitCalander/gitcalander';
+
+
+
+
 import Loginpage from './Component/loginpage';
 import Adminlogin from './Component/Admin';
 import Home from './Component/home';
@@ -27,24 +44,24 @@ import Encashment from './Component/submenu/leave/leavehistory/history';
 import Payslip from './Component/submenu/payroll/viewpayslip/viewpayslip';
 import ITdeclaration from './Component/submenu/payroll/itdeclaration/itdeclaration';
 
-//PMS Employee Component Import 
+// PMS Employee Component Import
 import Mygoals from './Component/submenu/pmsEmployee/mygoals/goals';
 import Appraisal from './Component/submenu/pmsEmployee/myappraisal/appraisal';
 
+// Exit system Component Import
+import ResignationIndex from './Component/submenu/quicklinks/Resignation/index';
 
-import './App.css';
-import RequestManagement from './Component/Admin/leaveManagement/leaveManagement';
+// Quicklinks imports
+import TicketForm from './Component/submenu/quicklinks/Raise Ticket/TicketForm';
+import EmployeeDetails from './Component/submenu/quicklinks/Employee profile/EmployeeDetails';
+import PasswordChangeForm from './Component/submenu/quicklinks/Password/Password';
+import ProfilePicture from './Component/submenu/quicklinks/Profilepicture/upload';
 
-import PdfTextExtractor from './Component/experiment/pdfextraction/pdf';
-import PDFParserReact from './Component/experiment/pdfextraction/pdf';
-import EditEmployee from './Component/Admin/editEmployee/editemployee';
-import FileUpload from './Component/experiment/insret_using_excel';
-import DownloadLeaveHistory from './Component/experiment/download/download';
-import AdminDashbord from './Component/Admin/adminDashbord/adminDashbord';
-import MLdrop from './Component/experiment/dropDown/mldrop';
-import MyNavbar from './Component/experiment/dropDown/mldrop';
-import EmployeeSearch from './Component/experiment/search suggestions/searchSuggestions';
-import Calendar from './Component/experiment/gitCalander/gitcalander';
+
+
+
+
+
 
 function App() {
   return (
@@ -91,6 +108,20 @@ function App() {
           <Route path='/experiment/search' Component={EmployeeSearch}/>
  
           <Route path='/experiment/calander' Component={Calendar}/>
+
+
+  {/* PMS Employee routes */}
+         <Route path="/PMS-Employee/Mygoals" element={<Mygoals />} />
+
+          {/* Exit system routes */}
+          <Route path="Quick-Links/Raise-Ticket" element={<TicketForm />} />
+          <Route path="/Quick-Links/Resignation" element={<ResignationIndex />} />
+          <Route path="/Quick-Links/Employee-Profile" element={<EmployeeDetails />} />
+          <Route path="/Quick-Links/Change-Password" element={<PasswordChangeForm />} />
+          <Route path="/Quick-Links/Profile-Picture-Upload" element={<ProfilePicture />} />
+
+
+
         </Routes>
       </Router>
 
