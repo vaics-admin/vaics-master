@@ -1,0 +1,56 @@
+/* Styles for the calendar component */
+.react-calendar {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 350px; /* Set width as needed */
+    background-color: #fff;
+  }
+  
+  /* Customize the tiles */
+  .react-calendar__tile {
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  /* Add hover effect for tiles */
+  .react-calendar__tile:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Style for present status */
+  .present {
+    color: black;
+    background-color: rgb(154, 241, 154) !important;
+    
+  }
+  
+  /* Style for partially absent status */
+  .partial {
+    color: black;
+    background-color: rgb(235, 212, 169);
+    
+  }
+  
+  /* Style for absent status */
+  .absent {
+    color: black;
+    background-color: rgb(221, 117, 117);
+    
+  }
+  
+  /* Add specific styles for the header */
+  .react-calendar__month-view__weekdays {
+    background-color: #f8f8f8;
+    font-weight: bold;
+  }
+  
+  /* Style for the selected day */
+  .react-calendar__tile--active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /*.react-calendar button{
+    
+  } */

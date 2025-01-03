@@ -1,0 +1,52 @@
+.company-name{
+    height: 30px;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-comp-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-note{
+    font-weight: bolder;
+}
+.label{
+    display: block;
+    margin-bottom: 10px;
+}
+.cred-input{
+    height: 20px;
+}
+.submit-button-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.button{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 0px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+.admin-login{
+    margin-left: 100%;
+    background-color: #93B5ED;
+    width: 80px;
+    border-radius: 10px;
+    border-width: 0px;
+    color: white;
+    height: 30px;
+}
+
+.login-err{
+    color: red;
+    font-size: 10px;
+}

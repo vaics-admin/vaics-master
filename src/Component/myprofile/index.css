@@ -1,0 +1,30 @@
+.pic{
+    width: 150px;
+    height: 150px;
+}
+.profile-picture{
+    width: 30vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.row{
+    width: 30vw;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    text-align: center;
+}
+.details{
+    display: flex;
+    width: 100px;
+}
+.leb{
+width: 120px;
+text-align: left;
+}
+.col{
+width: 20px;
+}
